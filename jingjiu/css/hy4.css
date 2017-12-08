@@ -1,0 +1,374 @@
+#canEle{display:block;margin: 0 auto;}
+
+body{background: #a17145;}
+
+.item00{ animation-delay: 0s;		-webkit-animation-delay: 0s; 	transition-delay: 0s;	-webkit-transition-delay: 0s;}
+.item01{ animation-delay: 0.15s;	-webkit-animation-delay: 0.15s; 	transition-delay:0.15s;	-webkit-transition-delay: 0.15s;}
+.item02{ animation-delay: 0.3s; 	-webkit-animation-delay:0.3s; 	transition-delay: 0.3s;	-webkit-transition-delay: 0.3s;}
+.item03{ animation-delay:0.45s;	-webkit-animation-delay:0.45s; 	transition-delay: 0.45s;	-webkit-transition-delay: 0.45s;}
+.item04{ animation-delay: 0.6s; 	-webkit-animation-delay: 0.6s; 	transition-delay: 0.6s;	-webkit-transition-delay: 0.6s;}
+.item05{ animation-delay: 0.75s;	-webkit-animation-delay: 0.75s; 	transition-delay:0.75s;	-webkit-transition-delay:0.75s;}
+.item06{ animation-delay: 0.9s; 	-webkit-animation-delay: 0.9s; 	transition-delay: 0.9s;	-webkit-transition-delay: 0.9s;}
+.item07{ animation-delay: 1.05s;	-webkit-animation-delay: 1.05s; 	transition-delay: 1.05s;	-webkit-transition-delay: 1.05s;}
+.item08{ animation-delay: 1.2s; 	-webkit-animation-delay: 1.2s; 	transition-delay: 1.2s;	-webkit-transition-delay: 1.2s;}
+.item09{ animation-delay: 1.35s;	-webkit-animation-delay: 1.35s; 	transition-delay: 1.35s;	-webkit-transition-delay: 1.35s;}
+.item10{ animation-delay: 1.5s;		-webkit-animation-delay: 1.5s; 	transition-delay:1.5s;	-webkit-transition-delay:1.5s;}
+.item11{ animation-delay: 1.7s;		-webkit-animation-delay: 1.7s; 	transition-delay:1.7s;	-webkit-transition-delay:1.7s;}
+
+
+.btn{position: absolute;cursor: pointer;}
+
+
+.page1 .nr{background: url(http://www.seth5.com/jingjiu1020/img/1.jpg) no-repeat center top;}
+.page1 .txLgb{
+	  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+   -webkit-animation-name: txLgb;
+  animation-name: txLgb;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.page1 .logo{width: 640px;height: 127px;background: url(http://www.seth5.com/jingjiu1020/img/logo.png) no-repeat center top;top: 0;}
+.page1 .topTx{display: none;}
+.page1 .tx{width: 640px;height:114px;background: url(http://www.seth5.com/jingjiu1020/img/0_tx.png) no-repeat center top;bottom: 0;transform: scale(1.3,1.3);-webkit-transform: scale(1.3,1.3);display: none;}
+.page1 .hand{width:76px;height: 36px;background: url(http://www.seth5.com/jingjiu1020/img/arr0.png) no-repeat center top;top: 613px;left: 367px;
+display: none;
+}
+
+.page1 .hand.show{
+	display: block;
+ -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+   -webkit-animation-name: hands;
+  animation-name: hands;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+}
+
+.page1 .topTx{width: 640px;height:425px;overflow: hidden;position: absolute;}
+.page1 .goIN{width:206px;height:345px;top: 440px;left: 335px;z-index: 9;}
+
+@-webkit-keyframes txLgb {
+    from,15%,to{
+  	-webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  
+  8%{
+  	-webkit-transform: translate3d(-10px, 5px, 0);
+    transform: translate3d(-10px, 5px, 0);
+     opacity: 0;
+  }
+  
+}
+
+@keyframes txLgb {
+  from,15%,to{
+  	-webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  
+  8%{
+  	-webkit-transform: translate3d(-10px, 5px, 0);
+    transform: translate3d(-10px, 5px, 0);
+     opacity: 0;
+  }
+}
+
+
+@-webkit-keyframes hands {
+  from,to{
+    -webkit-transform: translate3d(0px, 0px, 0);
+    transform: translate3d(0px, 0px, 0);
+  }
+  
+  50%{
+   -webkit-transform: translate3d(10px, 0px, 0);
+    transform: translate3d(10px, 0px, 0);
+  }
+  
+}
+
+@keyframes hands {
+  from,to{
+    -webkit-transform: translate3d(0px, 0px, 0);
+    transform: translate3d(0px, 0px, 0);
+  }
+  
+  50%{
+   -webkit-transform: translate3d(10px, 0px, 0);
+    transform: translate3d(10px, 0px, 0);
+  }
+}
+
+
+
+
+
+
+
+.loading{top: 0;left: 0;right: 0;bottom: 0;background: url(http://www.seth5.com/jingjiu1020/img/loadww.png) no-repeat center center;z-index: 11;display: none;}
+
+.mask_b{top: -1150px;left: 0;right: 0;height: 1150px;z-index: 9;display: none;}
+.mask_b .floorT{width: 640px;height: 110px;top: 110px;left: 50%;margin-left: -320px;}
+/*.mask_1 .floorT{background: url(http://www.seth5.com/jingjiu1020/img/f1.png) no-repeat center top;}*/
+/*.mask_2 .floorT{background: url(http://www.seth5.com/jingjiu1020/img/f2.png) no-repeat center top;}
+.mask_3 .floorT{background: url(http://www.seth5.com/jingjiu1020/img/f3.png) no-repeat center top;}
+.mask_4 .floorT{background: url(http://www.seth5.com/jingjiu1020/img/f4.png) no-repeat center top;}
+.mask_5 .floorT{background: url(http://www.seth5.com/jingjiu1020/img/f5.png) no-repeat center top;}*/
+
+
+.botT{bottom: 20px;left: 0;position: absolute;left: 50%;margin-left: -320px;transform: scale(1.2,1.2);-webkit-transform: scale(1.2,1.2);}
+.mask_1 .botT{/*background: url(http://www.seth5.com/jingjiu1020/img/1.png) no-repeat center bottom;*/position: fixed;}
+/*.tipBox2 .botT{background: url(http://www.seth5.com/jingjiu1020/img/2.png) no-repeat center bottom;}
+.tipBox3 .botT{background: url(http://www.seth5.com/jingjiu1020/img/3.png) no-repeat center bottom;}
+.tipBox4 .botT{background: url(http://www.seth5.com/jingjiu1020/img/5.png) no-repeat center bottom;}*/
+.tipBox5 .botT.botT1{background: url(http://www.seth5.com/jingjiu1020/img/4.png) no-repeat center bottom;width: 640px;height: 260px;}
+.tipBox5 .botT.botT2{background: url(http://www.seth5.com/jingjiu1020/img/6.png) no-repeat center bottom;width: 640px;height: 260px;}
+.tipBox5 .botT.botT3{background: url(http://www.seth5.com/jingjiu1020/img/7.png) no-repeat center bottom;width: 640px;height: 260px;}
+
+.mask_b.mask_1{top: 0;}
+.mask_b.mask_1 .botT{display: block;}
+.mask_b.mask_1 .floorT{top: 0;}
+.tipBox{display: none;top: 0;left: 0;right: 0;bottom: 0;position: fixed;z-index: 9;}
+.tipBox2 .arr{width: 640px;height: 82px;background: url(http://www.seth5.com/jingjiu1020/img/arr.png) no-repeat center top;    top: 722px;
+        left: 50%;
+    margin-left: -337px;}
+.tipBox2 .gonext{    width: 130px;
+    height: 134px;
+    top: 660px;
+    left: 50%;
+    margin-left: -68px;}
+
+
+
+.tipBox3 .arr2{width: 640px;height: 160px;background: url(http://www.seth5.com/jingjiu1020/img/arr2.png) no-repeat center top;top: 645px;    left: 50%;
+    margin-left: -311px;}
+.tipBox3 .gonext{    width: 303px;
+    height: 150px;
+    top: 656px;
+    left: 50%;
+    margin-left: -61px;}
+    
+
+.tipBox4 .arr3{width: 36px;height: 76px;background: url(http://www.seth5.com/jingjiu1020/img/arr3.png) no-repeat center top;top: 499px;
+    left: 50%;
+    margin-left: -209px;}
+.tipBox4 .gonext{ width: 49px;
+    height: 42px;
+        top: 446px;
+    left: 50%;
+    margin-left: -227px;}
+    
+/*.mask_b.mask_5{display: block;top: 0;}*/
+.tipBox5 .gonext{ 
+	width: 73px;height: 100px;    top: 277px;
+    left: 50%;
+    margin-left: -37px;
+    }
+
+.mask_5 .deng{width: 73px;height: 100px;background:url(http://www.seth5.com/jingjiu1020/img/de.png) no-repeat center top;top: 378px;left: 295px;}
+.mask_5 .deng0{width: 73px;height: 100px;background:url(http://www.seth5.com/jingjiu1020/img/de0.png) no-repeat center top;top: 383px;left: 286px;}
+.tipBox5 .yaoyao{width: 94px;height: 100px;background:url(http://www.seth5.com/jingjiu1020/img/iphone.png) no-repeat center top;bottom: 122px;left: 50%;
+    margin-left: -47px;display: none;}
+
+
+.yaoyao.shake{-webkit-animation: shake linear 1.5s 0s both;animation: shake linear 1.5s 0s both;}
+@-webkit-keyframes shake{
+	0% { -webkit-transform:rotate(0deg);}
+	25% { -webkit-transform:rotate(15deg);}
+	75% { -webkit-transform:rotate(-15deg);}
+	100% { -webkit-transform:rotate(0deg);}
+}
+@keyframes shake{
+	0% {transform:rotate(0deg);}
+	25% {transform:rotate(15deg);}
+	75% {transform:rotate(-15deg);}
+	100% {transform:rotate(0deg);}
+}
+
+.lou_1{position: absolute;background:url(http://www.seth5.com/jingjiu1020/img/lou1.png) no-repeat center top;z-index: 9;width: 640px;height: 1040px;top: 0;left: 50%;margin-left: -320px;
+	transform: scale(5,5);-webkit-transform: scale(5,5);transform-origin: 348px 580px;-webkit-transform-origin: 348px 580px; display: none;
+}
+
+.lou_2{position: absolute;background:url(http://www.seth5.com/jingjiu1020/img/3.jpg) no-repeat center top;z-index: 9;width: 640px;height: 1040px;top: 0;left: 50%;margin-left: -320px;
+	transform: scale(5,5);-webkit-transform: scale(4.5,4.5);transform-origin: 320px 560px;-webkit-transform-origin: 320px 560px; display: none;opacity: 0.8;
+}
+
+.lou_3{position: absolute;background:url(http://www.seth5.com/jingjiu1020/img/l2.jpg) no-repeat center top;z-index: 9;width: 640px;height: 1040px;top: -1040px;left: 50%;margin-left: -320px;
+}
+
+.lou_3 .rlou{background:url(http://www.seth5.com/jingjiu1020/img/lou3.png) no-repeat center top;width: 640px;height: 1040px;}
+.lou_3 .guan1{background:url(http://www.seth5.com/jingjiu1020/img/g_1.png) no-repeat center top;width: 327px;height: 356px;    top: 143px;
+    left: -229px;
+    transform-origin: 309px 340px;
+    -webkit-transform-origin: 309px 340px;}
+.lou_3 .guan2{background:url(http://www.seth5.com/jingjiu1020/img/g_2.png) no-repeat center top;width: 315px;height: 675px;    top: -130px;
+    left: 357px;
+    transform-origin: 24px 652px;
+    -webkit-transform-origin: 24px 652px;}
+.lou_3 .guan3{background:url(http://www.seth5.com/jingjiu1020/img/g_3.png) no-repeat center top;width: 201px;height: 822px;    top: -208px;
+    left: -9px;
+    transform-origin: 172px 800px;
+    -webkit-transform-origin: 172px 800px;}
+.lou_3 .guan4{background:url(http://www.seth5.com/jingjiu1020/img/g_4.png) no-repeat center top;width:640px;height: 1040px;    top: -403px;
+    left: 267px;
+    transform-origin: 18px 1040px;
+    -webkit-transform-origin: 18px 1040px;}
+
+
+
+.copyae{width: 640px;height: 392px;background: url(http://www.seth5.com/jingjiu1020/img/copy.png) no-repeat center top;bottom: 0;position: fixed;display: none;z-index: 9;left: 50%;
+    margin-left: -320px;}
+.tbTx{width: 520px;height: 105px;color: #fff;font-size: 22px;text-align: center;bottom: 212px;left: 60px;z-index:9;line-height: 30px;display: block;}
+
+.copybtn{    width: 266px;
+    height: 66px;
+    bottom: 126px;
+    left: 55px;
+    background: none;
+    border: none;
+    position: absolute;
+    z-index: 99;outline:none !important;}
+
+
+
+.fxBtn{   width: 266px;
+    height: 66px;
+    top: 202px;
+    left: 329px;outline:none !important;}
+
+
+.guan3,.guan4{
+	 -webkit-animation-duration: 3.5s;
+  animation-duration: 3.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+   -webkit-animation-name: lg;
+  animation-name: lg;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.guan1,.guan2{
+	 -webkit-animation-duration: 3.5s;
+  animation-duration: 3.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+   -webkit-animation-name: lg2;
+  animation-name: lg2;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes lg {
+  from,to{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  
+  50%{
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+  
+}
+
+@keyframes lg {
+  from,to{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  
+  50%{
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+}
+
+
+@-webkit-keyframes lg2 {
+  from,to{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  
+  50%{
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+  
+}
+
+@keyframes lg2 {
+  from,to{
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  
+  50%{
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+}
+
+
+.wordsM{width: 640px;height: 150px;bottom: 0;position: fixed;display: none;z-index: 9; left: 50%;
+    margin-left: -320px;transform: scale(1.3,1.3);-webkit-transform: scale(1.3,1.3);}
+.wordsM1{background: url(http://www.seth5.com/jingjiu1020/img/atx.png) no-repeat center bottom;}
+.wordsM2{background: url(http://www.seth5.com/jingjiu1020/img/btx.png) no-repeat center bottom;}
+.wordsM3{background: url(http://www.seth5.com/jingjiu1020/img/ctx.png) no-repeat center bottom;}
+.wordsM4{background: url(http://www.seth5.com/jingjiu1020/img/dtx.png) no-repeat center bottom;}
+.wordsM5{background: url(http://www.seth5.com/jingjiu1020/img/etx.png) no-repeat center bottom;}
+.wordsM6{background: url(http://www.seth5.com/jingjiu1020/img/ftx.png) no-repeat center bottom;}
+.wordsM7{background: url(http://www.seth5.com/jingjiu1020/img/gtx.png) no-repeat center bottom;}
+.wordsM8{background: url(http://www.seth5.com/jingjiu1020/img/htx.png) no-repeat center bottom;}
+
+
+
+
+
+.downPg{width: 640px;height: 159px;background: url(http://www.seth5.com/jingjiu1020/img/down.png) no-repeat center top;position: fixed;z-index: 9;top:100px;display: none;
+	-webkit-animation: moveIconDn ease 1.5s both infinite;animation: moveIconDn ease 1.5s both infinite;left: 50%;margin-left: -320px;
+}
+
+@-webkit-keyframes moveIconDn{
+	0% { -webkit-transform: translateY(-100%); opacity:0;}
+	50% { -webkit-transform: translateY(0%); opacity:1;}
+	100% { -webkit-transform: translateY(100%); opacity:0;}
+}
+@keyframes moveIconDn{
+	0% {transform: translateY(-100%); opacity:0;}
+	50% {transform: translateY(0%); opacity:1;}
+	100% {transform: translateY(100%); opacity:0;}
+}
+
+.loadBox{background:url(http://www.seth5.com/jingjiu1020/img/loadp.png) no-repeat center top;z-index: 9;position: absolute;top: 0;left: 0;right: 0;bottom: 0;}
+
+.loadBox .pz{width: 113px;height: 217px;bottom: 470px;left: 50%;margin-left: -56px;}
+.loadBox .pz0{width: 113px;height: 14px;background:url(http://www.seth5.com/jingjiu1020/img/botter.png) no-repeat center bottom;bottom: 470px;left: 50%;margin-left: -56px;}
+.load_num{color: #fff;font-size: 24px;font-family: arial;bottom:420px;text-align: center;width: 100%;}
+
+
+.jiu1{width: 30px;height: 55px;z-index: 9;
+transform: scale(1.15,1.15);-webkit-transform: scale(1.15,1.15);top: 646px;
+    left: 50%;
+    margin-left: 228px;}
+
+
+#fx{background:rgba(0,0,0,0.8) url(http://www.seth5.com/jingjiu1020/img/fx.png) no-repeat center;display: none;}
+
+
+
+.gb1{top: -300px;}
+.gb2{top: -190px;}
+.gb3{top: -190px;}
+.gb4{top: -190px;}
